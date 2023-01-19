@@ -320,14 +320,14 @@ font-family: Georgia,'Times New Roman',sans-serif;
 }
 
 .Name {
-    margin-left: 15%;
+    margin-left: 0%;
     font-family: Optima, sans-serif;
     font-size: 18pt;
     line-height: 1.3;
     margin-top: 0%;
     font-weight: 600;
     color: rgba(33,33,33,1);
-    text-align: center;
+    text-align: left;
 }
 
 .Name1 {
@@ -338,7 +338,7 @@ font-family: Georgia,'Times New Roman',sans-serif;
     margin-top: 0%;
     font-weight: 400;
     color: rgba(33,33,33,1);
-    text-align: center;
+    text-align: left;
 }
 .pdf {
     display: flex;
@@ -347,13 +347,13 @@ font-family: Georgia,'Times New Roman',sans-serif;
 .AP {
     margin-left: 0%;
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
-    font-size: 18pt;
-    line-height: 1.3;
-    text-transform: uppercase;
-    float: middle;
+    font-size: 15pt;
+    line-height: 1.5;
+    text-transform: ;
+    text-align: left;
     margin-top: 0%;
-    font-weight: 600;
-    color: #1520A6;
+    font-weight: 400;
+    color: #070707;
 }
 
 .project-text4 {
