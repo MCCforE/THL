@@ -30,6 +30,16 @@ body {
     }
 
 
+    .card {
+        width: 130px;
+        height: 195px;
+        background: url("img/Weixin\ Huang3.jpg") no-repeat;
+        display: inline-block;
+    }
+    .card:hover {
+        background: url("img/2D\ carton.jpg") no-repeat;
+    }
+
 .nav-icon {
     vertical-align: text-bottom;
 }
