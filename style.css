@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
 }
-
+html,body{
+	width: 100%;
+}
 body {
     background-color: none;
 }
 
 .wrapper {
-        width: auto;
+        width: 100%;
 }
 
 .Huanglogo {
@@ -68,27 +70,64 @@ nav {
     backgrround: url(Ximg/UND\ view2.jpg);
     background-color: #d4d4d4;
 }
-
+#navBtn{
+	display: none;
+}
 @media (max-width: 600px) {
+	body img{
+		max-width: 90%;
+		height: auto !important;
+	}
+	#navBtn{
+		display: inline-block;
+	}
+	.wrapper{
+		text-align: center;
+		border-bottom: 1px solid #eee;
+		
+	}
+	.wrapper{
+	position: fixed;
+	top: 0;
+	left: 0px;
+	background-color: #fff;
+	text-align: justify;
+	}
+	.labdescrption{
+		padding-top: 70px;
+	}
+	.Huanglogo{
+		margin-left: 15px !important;
+		margin-right: 0px !important;
+		width: 55%;
+		
+	}
+	.labdescrption,.home-text,.copyright{
+		margin-left: 15px !important;
+		margin-right: 15px !important;
+		max-width: 100%;
+		margin: 0 auto;
+	}
     .ul0 {
         position: relative;
         min-height: 30px;
+		background-color:transparent
     }
  
         .ul0 ul {
             width: 180px;
             padding: 5px 0;
-            position: absolute;
-            top: 0;
-            left: 0;
+            position: fixed;
+            top: 50px;
+            right: 3px;
             border: solid 1px #aaa;
-            background: #fff url(img/icon-menu.png) no-repeat 10px 11px;
+            background: #fff ;
             border-radius: 5px;
             box-shadow: 0 1px 2px rgba(0,0,0,.3);
         }
  
-        .ul0 li {
-            display: none; /* hide all <li> items */
+        .ul0  {
+          display: none; 
             margin: 0;
         }
  
@@ -113,8 +152,8 @@ nav {
         }
  
             .ul0 ul:hover li {
-                display: block;
-                margin: 0 0 5px;
+               /* display: block;
+                margin: 0 0 5px; */
             }
  
             .ul0 ul:hover .current {
@@ -132,6 +171,43 @@ nav {
             left: 50%;
             margin-left: -90px;
         }
+		
+	.section4 ,.section3,.section-name,.section,.section5{
+	    overflow: hidden;
+	    display: block !important; 
+	    justify-content: space-between;
+	}
+	.section3,.reseach-title,.AP,.copyright,.about-title{
+		text-align: center !important;
+	}
+	.section3 img,.section2 img {
+	    margin-left: 15px !important;
+	    margin-right: 15px !important;
+	}
+	.map {
+	   margin-right: 15px !important;
+	   margin-left: 15px !important;
+	  float: none;
+	    padding-top: 0px;
+	    padding-bottom: 2%;
+	}
+	.publicationsub,.contain-map,.reseach-title,.aboutUND,.UNDphoto2,.container,.Name0,.project-text0
+	,.project-title,.project-text2,.project-text,.project-text3{
+		margin-left: 15px !important;
+		margin-right: 15px !important;
+	}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 }
 
 .ul1 {
@@ -276,7 +352,6 @@ font-family: Georgia,'Times New Roman',sans-serif;
     text-transform: uppercase;
     padding-bottom: 1%;
 }
-
 .project-title {
     margin-left: 18%;
     margin-right: 18%;
@@ -376,7 +451,7 @@ font-family: Georgia,'Times New Roman',sans-serif;
 
 .AIimage {
     width: 250px;
-    height: 300px;
+    height: 300px !important;
     background: url("img/Weixin Huang3.jpg") no-repeat;
     background-size: 250px 300px;
 }
