@@ -191,7 +191,7 @@ nav {
 	    padding-top: 0px;
 	    padding-bottom: 2%;
 	}
-	.publicationsub,.contain-map,.reseach-title,.aboutUND,.UNDphoto2,.container,.Name0,.project-text0
+	.publicationsub,.contain-map,.reseach-title,.aboutUND,.UNDphoto2,.container,.Name0,.NameYC,.NameSF,.project-text0
 	,.project-title,.project-text2,.project-text,.project-text3{
 		margin-left: 15px !important;
 		margin-right: 15px !important;
@@ -462,6 +462,38 @@ font-family: Georgia,'Times New Roman',sans-serif;
     background-size: 250px 300px;
 }
 
+.AIimageYC {
+    width: 250px;
+    height: 300px !important;
+    background: url("img/YC.jpg") no-repeat;
+    background-size: 250px 300px;
+    
+}
+
+.AIimageYC:hover {
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+  
+    background: url("img/YC-AI-2.png");
+    animation: swap 1s linear infinite;
+    background-repeat: no-repeat;
+    background-size: 250px 300px;
+}
+
+.AIimageSF {
+    width: 250px;
+    height: 300px !important;
+    background: url("img/SF.jpg") no-repeat;
+    background-size: 250px 300px;
+}
+.AIimageSF:hover {
+    width: 250px;
+    height: 300px;
+    background: url("img/SF-cartoon.png") no-repeat;
+    background-size: 250px 300px;
+}
+
 .Name0 {
     margin-left: 0%;
     margin-right: 18%;
@@ -469,6 +501,18 @@ font-family: Georgia,'Times New Roman',sans-serif;
      
 }
 
+.NameYC {
+    margin-left: 0px;
+    margin-right: 550px;
+    text-align: center;
+     
+}
+.NameSF {
+    margin-left: 0px;
+    margin-right: 360px;
+    text-align: center;
+     
+}
 .section-name {
     display: flex;
     justify-content:stretch;
@@ -510,6 +554,8 @@ font-family: Georgia,'Times New Roman',sans-serif;
     font-weight: 400;
     color: #070707;
 }
+
+
 
 .project-text4 {
     margin-left: 20%;
