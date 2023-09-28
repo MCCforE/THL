@@ -443,17 +443,17 @@ font-family: Georgia,'Times New Roman',sans-serif;
 
 .section3 img {
     
-        margin-left: 30%;
+        margin-left: 27%;
         margin-right: 0%;
         
     
 }
 
 .AIimage {
-    width: 250px;
+    width: 250px !important;
     height: 300px !important;
     background: url("img/Weixin Huang3.jpg") no-repeat;
-    background-size: 250px 300px;
+    background-size: 250px 300px !important;
 }
 .AIimage:hover {
     width: 250px;
@@ -463,10 +463,10 @@ font-family: Georgia,'Times New Roman',sans-serif;
 }
 
 .AIimageYC {
-    width: 250px;
+    width: 250px !important;
     height: 300px !important;
     background: url("img/YC.jpg") no-repeat;
-    background-size: 250px 300px;
+    background-size: 250px 300px !important;
     
 }
 
@@ -478,38 +478,38 @@ font-family: Georgia,'Times New Roman',sans-serif;
     background: url("img/YC-AI-2.png");
     animation: swap 1s linear infinite;
     background-repeat: no-repeat;
-    background-size: 250px 300px;
+    background-size: 250px 300px !important;
 }
 
 .AIimageSF {
-    width: 250px;
+    width: 250px !important;
     height: 300px !important;
     background: url("img/SF.jpg") no-repeat;
-    background-size: 250px 300px;
+    background-size: 250px 300px !important;
 }
 .AIimageSF:hover {
     width: 250px;
     height: 300px;
-    background: url("img/SF-cartoon.png") no-repeat;
-    background-size: 250px 300px;
+    background: url("img/SF-cartoon.jpg") no-repeat;
+    background-size: 250px 300px !important;
 }
 
 .Name0 {
-    margin-left: 0%;
+    margin-left: 1%;
     margin-right: 18%;
-    text-align: center;
+    text-align:center;
      
 }
 
 .NameYC {
-    margin-left: 0px;
-    margin-right: 35.5%;
+    margin-left: 1%;
+    margin-right: 18%;
     text-align: center;
      
 }
 .NameSF {
-    margin-left: 0px;
-    margin-right: 23%;
+    margin-left: 1%;
+    margin-right: 18%;
     text-align: center;
      
 }
