@@ -452,13 +452,13 @@ font-family: Georgia,'Times New Roman',sans-serif;
 .AIimage {
     width: 250px !important;
     height: 300px !important;
-    background: url("img/Weixin Huang3.jpg") no-repeat;
+    background: url("img/WH\ 2023fall.jpg") no-repeat;
     background-size: 250px 300px !important;
 }
 .AIimage:hover {
     width: 250px;
     height: 300px;
-    background: url("img/2D carton.jpg") no-repeat;
+    background: url("img/Hawk\ style2.jpg") no-repeat;
     background-size: 250px 300px;
 }
 
@@ -475,7 +475,7 @@ font-family: Georgia,'Times New Roman',sans-serif;
     height: 300px;
     cursor: pointer;
   
-    background: url("img/YC-AI-2.png");
+    background: url("img/YC-AI-1.jpg");
     animation: swap 1s linear infinite;
     background-repeat: no-repeat;
     background-size: 250px 300px !important;
@@ -752,7 +752,7 @@ font-family: Georgia,'Times New Roman',sans-serif;
     padding-bottom: 2%;
     justify-content: center;
     text-align: center;
-    }    
+}    
 
     .hover15 figure {
         position: relative;
