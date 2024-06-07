@@ -494,6 +494,25 @@ font-family: Georgia,'Times New Roman',sans-serif;
     background-size: 250px 300px !important;
 }
 
+.AIimageAG {
+    width: 250px !important;
+    height: 300px !important;
+    background: url("img/AG.jpg") no-repeat;
+    background-size: 250px 300px !important;
+    
+}
+
+.AIimageAG:hover {
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+  
+    background: url("img/AG-cartoonheadshot.jpg");
+    animation: swap 1s linear infinite;
+    background-repeat: no-repeat;
+    background-size: 250px 300px !important;
+}
+
 .Name0 {
     margin-left: 1%;
     margin-right: 18%;
