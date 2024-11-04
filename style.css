@@ -513,6 +513,44 @@ font-family: Georgia,'Times New Roman',sans-serif;
     background-size: 250px 300px !important;
 }
 
+.AIimageDY {
+    width: 250px !important;
+    height: 300px !important;
+    background: url("img/DY.jpg") no-repeat;
+    background-size: 250px 300px !important;
+    
+}
+
+.AIimageDY:hover {
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+  
+    background: url("img/DY-cartoon-2.png");
+    animation: swap 1s linear infinite;
+    background-repeat: no-repeat;
+    background-size: 250px 300px !important;
+}
+
+.AIimageXH {
+    width: 250px !important;
+    height: 300px !important;
+    background: url("img/Shawn.jpg") no-repeat;
+    background-size: 250px 300px !important;
+    
+}
+
+.AIimageXH:hover {
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+  
+    background: url("img/Shawn\ Cartoon.png");
+    animation: swap 1s linear infinite;
+    background-repeat: no-repeat;
+    background-size: 250px 300px !important;
+}
+
 .Name0 {
     margin-left: 1%;
     margin-right: 18%;
