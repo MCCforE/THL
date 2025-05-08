@@ -551,6 +551,25 @@ font-family: Georgia,'Times New Roman',sans-serif;
     background-size: 250px 300px !important;
 }
 
+.AIimageNF {
+    width: 250px !important;
+    height: 300px !important;
+    background: url("img/Nauman\ Farid.JPG") no-repeat;
+    background-size: 250px 300px !important;
+    
+}
+
+.AIimageNF:hover {
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+  
+    background: url("img/Nauman\ Farid\ cartoon.png");
+    animation: swap 1s linear infinite;
+    background-repeat: no-repeat;
+    background-size: 250px 300px !important;
+}
+
 .Name0 {
     margin-left: 1%;
     margin-right: 18%;
