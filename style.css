@@ -570,6 +570,25 @@ font-family: Georgia,'Times New Roman',sans-serif;
     background-size: 250px 300px !important;
 }
 
+.AIimageAP {
+    width: 250px !important;
+    height: 300px !important;
+    background: url("img/Alejandro\ Palafox.jpg") no-repeat;
+    background-size: 250px 300px !important;
+    
+}
+
+.AIimageAP:hover {
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+  
+    background: url("img/Alejandro\ Palafox\ wizard.png");
+    animation: swap 1s linear infinite;
+    background-repeat: no-repeat;
+    background-size: 250px 300px !important;
+}
+
 .Name0 {
     margin-left: 1%;
     margin-right: 18%;
