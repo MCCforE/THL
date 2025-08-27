@@ -1072,10 +1072,18 @@ figure:hover+span {
 }
 
 .pub-item a.title:hover {
-    text-decoration: underline;  /* 鼠标悬停时显示下划线 */
+    text-decoration: none;   /* 悬停时也不要下划线 */
+  color: gray;             /* 悬停时变灰色 */
 }
 
 .pub-item .details {
     display: inline-block;
     margin-left: 20px;           /* 作者和期刊信息缩进 */
+}
+
+.pub-item a.title,
+.pub-item a.title:link,
+.pub-item a.title:visited,
+.pub-item a.title:active {
+  text-decoration: none !important;
 }
