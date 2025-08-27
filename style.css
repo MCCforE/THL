@@ -1035,55 +1035,62 @@ figure:hover+span {
 
 /* UND Publications 两栏 */
 .und-pub-row {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 350px;  /* 左列自适应，右列固定 */
-    gap: 16px;
-    align-items: start;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
 }
 
 .und-pub-toc {
-    text-align: right;
+  text-align: right;
 }
 
 .und-pub-toc img {
-    max-width: 350px;   /* 限制宽度 */
-    height: auto;
-    object-fit: contain;
+  width: 260px;        /* desktop preferred size */
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
-
 .pub-item {
-    margin: 12px 0;              /* 每条文献上下间距 */
-    line-height: 1.6;            /* 行距舒适 */
-    text-align: left;            /* 靠左排版 */
+  flex: 1 1 auto;       /* flexible text column */
+  min-width: 0;
+  margin: 12px 0;       /* vertical spacing */
+  line-height: 1.6;     /* comfortable spacing */
+  text-align: left;
 }
 
 .pub-item .index {
-             /* 序号加粗 */
-    margin-right: 6px;
+  margin-right: 6px;    /* sequence number spacing */
 }
 
 .pub-item a.title {
-    font-family: Arial, Helvetica, sans-serif; /* 指定字体 */
-    color: #2a7db3;              /* 蓝色标题（和你截图一样） */original #192bc2
-    text-decoration: none;       /* 去掉下划线 */
-    font-weight: bold;      /* 比 bold 更粗 */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2a7db3;       /* blue title */
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .pub-item a.title:hover {
-    text-decoration: none;   /* 悬停时也不要下划线 */
-  color: gray;             /* 悬停时变灰色 */
+  text-decoration: none;
+  color: gray;          /* hover gray */
 }
 
 .pub-item .details {
-    display: inline-block;
-    margin-left: 20px;           /* 作者和期刊信息缩进 */
+  display: inline-block;
+  margin-left: 20px;    /* author & journal indent */
 }
 
-.pub-item a.title,
-.pub-item a.title:link,
-.pub-item a.title:visited,
-.pub-item a.title:active {
-  text-decoration: none !important;
+/* MOBILE: stack text on top, figure below */
+@media (max-width: 640px) {
+  .und-pub-row {
+    flex-direction: column;
+  }
+  .und-pub-toc {
+    text-align: center;   /* optional: center image on mobile */
+  }
+  .und-pub-toc img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
