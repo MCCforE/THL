@@ -279,7 +279,7 @@ ul li a.is-active:hover {
     margin-top: 15%;
     width: 120%;
     height: 60%;
-    background: #4285F4;
+    background: #2a7db3;
     text-align: center;
     border: 5% solid #d4d4d4;
     /*设置圆角*/
@@ -722,7 +722,7 @@ font-family: Georgia,'Times New Roman',sans-serif;
     font-size: 208%;
     color: rgba(31,31,31,1);
     margin-top: 1%;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     padding-bottom: 0%;
 }
 .publicationsub {
@@ -738,16 +738,7 @@ font-family: Georgia,'Times New Roman',sans-serif;
     padding-bottom: 0%;
 }
 
-.section4 {
-    display: flex;
-    justify-content: space-between; 
-}
 
-.section4 img {
-    margin-right: 1%;
-    margin-left: 1%;
-    float: right top;
-    }
 
 .section5 {
     display: flex;
@@ -1018,3 +1009,73 @@ figure:hover+span {
     background: #fff;
 }
 
+.section4 {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.section4 img {
+    margin-right: 1%;
+    margin-left: 1%;
+    float: right top;
+    }
+
+
+/* 只影响 publications 部分，不动其它地方的 .section4 */
+.section4.und-pubs {
+    display: block;             /* 不用 flex */
+    margin-left: 3%;
+    margin-right: 16%;
+}
+
+.section4.und-pubs img {
+    float: none;                /* 禁用全局的 float */
+    margin: 0;                  /* 清掉多余边距 */
+}
+
+/* UND Publications 两栏 */
+.und-pub-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 350px;  /* 左列自适应，右列固定 */
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.und-pub-toc {
+    text-align: right;
+}
+
+.und-pub-toc img {
+    max-width: 350px;   /* 限制宽度 */
+    height: auto;
+    object-fit: contain;
+}
+
+
+.pub-item {
+    margin: 12px 0;              /* 每条文献上下间距 */
+    line-height: 1.6;            /* 行距舒适 */
+    text-align: left;            /* 靠左排版 */
+}
+
+.pub-item .index {
+             /* 序号加粗 */
+    margin-right: 6px;
+}
+
+.pub-item a.title {
+    font-family: Arial, Helvetica, sans-serif; /* 指定字体 */
+    color: #2a7db3;              /* 蓝色标题（和你截图一样） */original #192bc2
+    text-decoration: none;       /* 去掉下划线 */
+    font-weight: bold;      /* 比 bold 更粗 */
+}
+
+.pub-item a.title:hover {
+    text-decoration: underline;  /* 鼠标悬停时显示下划线 */
+}
+
+.pub-item .details {
+    display: inline-block;
+    margin-left: 20px;           /* 作者和期刊信息缩进 */
+}
