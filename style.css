@@ -158,3 +158,43 @@ a:hover {
   margin: 0 0 20px 0;
   border: 3px solid #eee;
 }
+
+.nanoparticlephoto img {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.chemistrycooking {
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.lab-visual {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 15px;
+  border: 2px solid #eee;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.svg-energy {
+  width: 23px;
+  height: 23px;
+  color: #0e5f6d;
+  margin-left: 3px;
+  vertical-align: middle;
+}
