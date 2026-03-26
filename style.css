@@ -82,7 +82,7 @@ body {
 }
 
 .section h1 {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #000;
   margin: 0 0 20px 0;
@@ -163,7 +163,7 @@ a:hover {
   width: 100%;
   max-width: 800px;
   display: block;
-  margin: 20px 0;
+  margin: 20px 50px;   /* ← 关键：auto 居中 */
   border-radius: 6px;
 }
 
@@ -197,4 +197,279 @@ a:hover {
   color: #0e5f6d;
   margin-left: 3px;
   vertical-align: middle;
+}
+
+.project-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.project-text {
+  flex: 2;
+}
+
+.project-image {
+  flex: 1;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  margin: 0;
+  border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-image img {
+    max-width: 100%;
+  }
+}
+
+.project-text p {
+  text-align: justify;
+}
+
+.project-block p {
+  text-align: justify;
+}
+
+.section p {
+  text-align: justify;
+}
+
+.project-image-below {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.project-image-below img {
+  width: 200%;
+  max-width: 600px;   /* 跟之前一样 */
+  border-radius: 6px;
+}
+
+.group-section {
+  max-width: 700px;
+  margin: 40px 0px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.group-section h2 {
+  font-size: 1.4rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.group-section ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.group-section li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.group-section a {
+  color: #2a7db8;
+  text-decoration: none;
+}
+
+.group-section a:hover {
+  text-decoration: underline;
+}
+
+/* publications ===== base ===== */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ===== main content only ===== */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 10px 40px;
+}
+
+/* ===== header ===== */
+.pub-section {
+  margin-bottom: 36px;
+}
+
+.pub-heading h1 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.pub-heading p {
+  margin: 0;
+  font-size: 1.00rem;
+  color: #555;
+}
+
+.scholar-link img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ===== note ===== */
+.pub-note {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 6px 0 14px;
+}
+
+
+.svg2 {
+  width: 0.9em;
+  height: 0.9em;
+  vertical-align: -0.1em;
+}
+
+/* ===== featured pubs (UND) ===== */
+.featured-pubs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.featured-pub {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 20px;
+  align-items: start;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+.featured-pub:first-child {
+  border-top: none;
+}
+
+.featured-pub-text {
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+}
+
+.pub-number {
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex: 0 0 auto;
+}
+
+.pub-title-link {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #1f4f78;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.pub-title-link:hover {
+  text-decoration: underline;
+}
+
+.pub-authors {
+  margin: 4px 0 0;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.48;
+}
+
+.featured-pub-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.featured-pub-image img {
+  width: 270px;
+  max-width: 100%;
+  border-radius: 4px;
+  border: none;
+}
+
+/* ===== older pubs ===== */
+.older-pubs-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 20px;
+  align-items: start;
+}
+
+.older-pubs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pub-item-row {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  min-width: 0;
+}
+
+.pub-item-row:last-child {
+  border-bottom: none;
+}
+
+.pub-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.pub-gallery img {
+  width: 270px;
+  max-width: 100%;
+  border-radius: 4px;
+  border: none;
+}
+
+/* ===== footer ===== */
+.site-footer {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.site-footer p {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* ===== responsive ===== */
+@media (max-width: 800px) {
+  .featured-pub,
+  .older-pubs-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-pub-image,
+  .pub-gallery {
+    align-items: flex-start;
+  }
+
+  .featured-pub-image img,
+  .pub-gallery img {
+    width: 180px;
+    max-width: 100%;
+  }
 }
