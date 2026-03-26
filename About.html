@@ -15,7 +15,23 @@
   <img src="img/Huang-logo18.jpg" class="logo">
 
  <!-- 实验室视觉图 -->
-<img src="img/Lab picture V2b.png" class="lab-visual">
+<img id="labVisual" src="img/lab-1.png" class="lab-visual">
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const month = new Date().getMonth() + 1;
+  const img = document.getElementById("labVisual");
+
+  if (!img) return;
+
+  const path = "img/lab-" + month + ".png";
+  img.src = path;
+
+  img.onerror = function () {
+    this.src = "img/Lab-picture-V2b.png";
+  };
+});
+</script>
 
 <!-- tagline -->
 <div class="tagline">
@@ -32,9 +48,9 @@
   <ul>
     <li><a href="https://scholar.google.com/citations?user=FSAEWCkAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
     <li><a href="https://orcid.org/0000-0003-1456-4387" target="_blank">ORCID iD</a></li>
-    <li><a href="#">ResearchGate</a></li>
+    <li><a href="https://www.researchgate.net/profile/Weixin-Huang" target="_blank">ResearchGate</a></li>
     <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57221075807" target="_blank">Scopus</a></li>
-    <li><a href="#">LinkedIn</a></li>
+    <li><a href="https://www.linkedin.com/in/weixin-huang-7271571a3/" target="_blank">LinkedIn</a></li>
   </ul>
 </div>
 </aside>
@@ -60,6 +76,29 @@
              <p class="contactinfo">Weixin Huang</p>
              <p class="contactinfo">Department of Chemistry</p>
              <p class="contactinfo">University of North Dakota</p>
+            <div class="info email-copy">
+                <span>Email: <span id="emailText">weixin.huang@und.edu</span></span>
+                <button class="copy-btn" onclick="copyEmail()" title="Copy email" aria-label="Copy email">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+                    <rect x="4" y="4" width="11" height="11" rx="2"></rect>
+                  </svg>
+                </button>
+              </div>
+
+              <script>
+              function copyEmail() {
+                const email = document.getElementById("emailText").textContent;
+                navigator.clipboard.writeText(email).then(function () {
+                  const btn = document.querySelector(".copy-btn");
+                  const original = btn.innerHTML;
+                  btn.innerHTML = "✔";
+                  setTimeout(function () {
+                    btn.innerHTML = original;
+                  }, 1200);
+                });
+              }
+              </script>
              <br>
              <br>
             <p class="contactinfo"><strong>Address</strong>: Abbott Hall Room 224D</p>

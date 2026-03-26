@@ -64,6 +64,46 @@ iframe {
   color: #494e52;
 }
 
+.email-copy0 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.email-copy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.15rem;
+}
+
+#emailText {
+  color: #52adc8;           /* 和你网站链接一致 */
+  text-decoration:none;
+  cursor: pointer;
+}
+
+.copy-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  color: #1e2020;
+  opacity: 0.7;
+  transition: 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;   /* ⭐ 关键 */
+}
+
+.copy-btn:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+
 .follow ul {
   padding-left: 16px;
 }
