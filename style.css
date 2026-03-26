@@ -167,6 +167,12 @@ a:hover {
   border-radius: 6px;
 }
 
+.nanoparticlephoto2 img {
+  max-width: 50%;
+  height: auto;
+  margin: 20px 50px;   /* ← 关键：auto 居中 */
+}
+
 .chemistrycooking {
   font-size: 1.05rem;
   color: #666;
@@ -242,17 +248,6 @@ a:hover {
 
 .section p {
   text-align: justify;
-}
-
-.project-image-below {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.project-image-below img {
-  width: 200%;
-  max-width: 600px;   /* 跟之前一样 */
-  border-radius: 6px;
 }
 
 .group-section {
@@ -472,4 +467,26 @@ img {
     width: 180px;
     max-width: 100%;
   }
+}
+
+.courses {
+  font-size: 15px;
+}
+
+.semester {
+  margin-bottom: 18px;
+}
+
+.semester strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.semester ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.semester li {
+  margin-bottom: 4px;
 }
