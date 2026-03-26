@@ -5,6 +5,11 @@ body {
   color: #494e52;
   line-height: 1.6;
   background: #fff;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .container {
@@ -16,24 +21,32 @@ body {
   padding: 0 24px 40px 24px;
 }
 
+img,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
 .sidebar {
   padding-top: 12px;
 }
 
 .logo {
-  width: 260px;
-  margin: 0 0 24px 0;
+  width: 270px;
+  max-width: 100%;
+  margin: 0 0 20px 0;
   display: block;
 }
 
 .profile-img {
-  width: 175px;
-  height: 175px;
+  width: 160px;
+  height: 160px;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 50%;
   display: block;
   margin: 0 0 20px 0;
-  border: 1px solid #f2f3f3;
+  border: 3px solid #eee;
 }
 
 .name {
@@ -52,7 +65,7 @@ body {
 }
 
 .follow ul {
-  padding-left: 16px;   /* 原来一般是 40px */
+  padding-left: 16px;
 }
 
 .topnav {
@@ -129,48 +142,18 @@ a:hover {
   color: #666;
 }
 
-@media (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .sidebar {
-    position: static;
-  }
-
-  .profile-img {
-    width: 180px;
-  }
-}
-
-.logo {
-  width: 270px;
-  margin: 0 0 20px 0;   /* 上=0 */
-}
-
-.profile-img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin: 0 0 20px 0;
-  border: 3px solid #eee;
-}
-
 .nanoparticlephoto img {
   width: 100%;
   max-width: 800px;
   display: block;
-  margin: 20px 50px;   /* ← 关键：auto 居中 */
+  margin: 20px 0;
   border-radius: 6px;
 }
 
 .nanoparticlephoto2 img {
   max-width: 50%;
   height: auto;
-  margin: 20px 50px;   /* ← 关键：auto 居中 */
+  margin: 20px 50px;
 }
 
 .chemistrycooking {
@@ -228,31 +211,15 @@ a:hover {
   border-radius: 6px;
 }
 
-@media (max-width: 900px) {
-  .project-row {
-    flex-direction: column;
-  }
-
-  .project-image img {
-    max-width: 100%;
-  }
-}
-
-.project-text p {
-  text-align: justify;
-}
-
-.project-block p {
-  text-align: justify;
-}
-
+.project-text p,
+.project-block p,
 .section p {
   text-align: justify;
 }
 
 .group-section {
   max-width: 700px;
-  margin: 40px 0px;
+  margin: 40px 0;
   font-family: Arial, sans-serif;
   color: #333;
 }
@@ -283,20 +250,17 @@ a:hover {
   text-decoration: underline;
 }
 
-/* publications ===== base ===== */
 img {
   display: block;
   max-width: 100%;
 }
 
-/* ===== main content only ===== */
 .content {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px 10px 40px;
 }
 
-/* ===== header ===== */
 .pub-section {
   margin-bottom: 36px;
 }
@@ -309,7 +273,7 @@ img {
 
 .pub-heading p {
   margin: 0;
-  font-size: 1.00rem;
+  font-size: 1rem;
   color: #555;
 }
 
@@ -320,13 +284,11 @@ img {
   vertical-align: middle;
 }
 
-/* ===== note ===== */
 .pub-note {
   font-size: 0.85rem;
   color: #666;
   margin: 6px 0 14px;
 }
-
 
 .svg2 {
   width: 0.9em;
@@ -334,7 +296,6 @@ img {
   vertical-align: -0.1em;
 }
 
-/* ===== featured pubs (UND) ===== */
 .featured-pubs {
   display: flex;
   flex-direction: column;
@@ -398,7 +359,6 @@ img {
   border: none;
 }
 
-/* ===== older pubs ===== */
 .older-pubs-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 260px;
@@ -438,7 +398,6 @@ img {
   border: none;
 }
 
-/* ===== footer ===== */
 .site-footer {
   margin-top: 24px;
   padding-top: 12px;
@@ -448,25 +407,6 @@ img {
 .site-footer p {
   font-size: 0.8rem;
   color: #666;
-}
-
-/* ===== responsive ===== */
-@media (max-width: 800px) {
-  .featured-pub,
-  .older-pubs-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .featured-pub-image,
-  .pub-gallery {
-    align-items: flex-start;
-  }
-
-  .featured-pub-image img,
-  .pub-gallery img {
-    width: 180px;
-    max-width: 100%;
-  }
 }
 
 .courses {
@@ -489,4 +429,143 @@ img {
 
 .semester li {
   margin-bottom: 4px;
+}
+
+/* ===== contact + map ===== */
+.section5,
+.contain-map {
+  min-width: 0;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 450px;
+  height: 338px;
+  display: block;
+}
+
+/* ===== mobile ===== */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 16px 32px 16px;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .logo {
+    width: 220px;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-image img {
+    max-width: 100%;
+  }
+
+  .featured-pub,
+  .older-pubs-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-pub-image,
+  .pub-gallery {
+    align-items: flex-start;
+  }
+
+  .featured-pub-image img,
+  .pub-gallery img {
+    width: 180px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .topnav ul {
+    gap: 16px;
+  }
+
+  .topnav a {
+    font-size: 1rem;
+  }
+
+  .section p,
+  .news-list li {
+    font-size: 1rem;
+  }
+
+  .section5 {
+    display: block;
+  }
+
+  .contain-map,
+  .map {
+    width: 100%;
+  }
+
+  .map iframe {
+    max-width: 100%;
+    height: 260px;
+  }
+
+  .UNDphoto2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .UNDphotospace img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nanoparticlephoto2 img {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+}
+
+/* ===== contact + map layout ===== */
+.section5 {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contain-map {
+  flex: 1;
+}
+
+.map {
+  flex: 1;
+}
+
+.map iframe {
+  width: 100%;
+  height: 320px;
+  display: block;
+}
+
+/* ===== mobile fix ===== */
+@media (max-width: 768px) {
+  .section5 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 260px;
+  }
 }
