@@ -91,6 +91,7 @@
 
               <li><span class="news-date">[2025/06]</span> Dr. Huang delivered an oral presentation and Shuxuan presented a poster at NAM29 (Atlanta, GA).</li>
         </ul>
+        <button id="show-more-news" class="show-more-btn">Show more news</button>
       </section>
 
       <div class="footer">
@@ -98,6 +99,21 @@
       </div>
     </main>
   </div>
+
+  <script>
+  const newsList = document.querySelector('.news-list');
+  const showMoreBtn = document.getElementById('show-more-news');
+
+  showMoreBtn.addEventListener('click', function () {
+    newsList.classList.toggle('show-all');
+
+    if (newsList.classList.contains('show-all')) {
+      showMoreBtn.textContent = 'Show less news';
+    } else {
+      showMoreBtn.textContent = 'Show more news';
+    }
+  });
+</script>
 
 </body>
 </html>
