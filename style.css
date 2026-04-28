@@ -618,17 +618,65 @@ img {
   display: list-item;
 }
 
+.news-more-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.news-more-line {
+  flex: 1;
+  height: 1px;
+  background: #d8d8d8;
+}
+
 .show-more-btn {
-  margin-top: 12px;
-  padding: 8px 18px;
-  border: 1px solid #ccc;
-  background: #f7f7f7;
-  color: #333;
-  border-radius: 20px;
-  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 10px 28px;
+
+  border: 1.2px solid #2a5db0;
+  border-radius: 999px;
+  background: #fff;
+
+  /* 👇关键：字体统一 */
+  font-family: inherit;     /* 跟页面一样 */
+  font-size: 16px;          /* 不要 18px，太大 */
+  font-weight: 400;         /* 不要粗体 */
+  letter-spacing: 0.2px;
+
+  color: #2a5db0; 
   cursor: pointer;
+
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;   /* 微妙提升质感 */
 }
 
 .show-more-btn:hover {
-  background: #eaeaea;
+  background: #f4f7fc;        /* 非常浅 */
+}
+
+.btn-arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 1.3px solid #2a5db0;
+  border-bottom: 1.3px solid #2a5db0;
+  transform: rotate(45deg) translateY(-1px);
+}
+
+.news-list.show-all + .news-more-wrap .btn-arrow {
+  transform: rotate(-135deg) translateY(-3px);
+}
+
+.news-list {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
 }

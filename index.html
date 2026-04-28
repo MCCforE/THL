@@ -77,7 +77,7 @@
       <section class="section">
         <h1>Recent News</h1>
         <ul class="news-list">
-              <li><span class="news-date">[2026/04]</span> Our collaborative work on atomically dispersed Ce cations for automotive emissions control is published in <a href="https://pubs.acs.org/doi/10.1021/acscatal.6c01326" target="_blank">JACS</a>.</li>
+              <li><span class="news-date">[2026/04]</span> Our collaborative work on Ce<sub>1</sub> catalysts for automotive emissions control is published in <a href="https://pubs.acs.org/doi/10.1021/acscatal.6c01326" target="_blank">JACS</a>.</li>
           
               <li><span class="news-date">[2026/04]</span> Our work on CO<sub>2</sub> electroreduction at metal–oxide interfaces is published in <a href="https://pubs.acs.org/doi/10.1021/acscatal.6c01326" target="_blank">ACS Catalysis</a>.</li>
           
@@ -91,7 +91,16 @@
 
               <li><span class="news-date">[2025/06]</span> Dr. Huang delivered an oral presentation and Shuxuan presented a poster at NAM29 (Atlanta, GA).</li>
         </ul>
-        <button id="show-more-news" class="show-more-btn">Show more news</button>
+          <div class="news-more-wrap">
+            <div class="news-more-line"></div>
+
+            <button id="show-more-news" class="show-more-btn">
+              <span class="btn-text">Show more news</span>
+              <span class="btn-arrow"></span>
+            </button>
+
+            <div class="news-more-line"></div>
+          </div>
       </section>
 
       <div class="footer">
@@ -100,20 +109,21 @@
     </main>
   </div>
 
-  <script>
-  const newsList = document.querySelector('.news-list');
-  const showMoreBtn = document.getElementById('show-more-news');
+    <script>
+      const newsList = document.querySelector('.news-list');
+      const showMoreBtn = document.getElementById('show-more-news');
+      const btnText = showMoreBtn.querySelector('.btn-text');
 
-  showMoreBtn.addEventListener('click', function () {
-    newsList.classList.toggle('show-all');
+      showMoreBtn.addEventListener('click', function () {
+        newsList.classList.toggle('show-all');
 
-    if (newsList.classList.contains('show-all')) {
-      showMoreBtn.textContent = 'Show less news';
-    } else {
-      showMoreBtn.textContent = 'Show more news';
-    }
-  });
-</script>
+        if (newsList.classList.contains('show-all')) {
+          btnText.textContent = 'Show less news';
+        } else {
+          btnText.textContent = 'Show more news';
+        }
+      });
+    </script>
 
 </body>
 </html>
