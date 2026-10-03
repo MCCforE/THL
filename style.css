@@ -680,3 +680,17 @@ img {
   padding-left: 0;
   margin-bottom: 0;
 }
+
+.featured-pub-image.featured-pub-image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: auto;
+}
+
+.featured-pub-image.featured-pub-image-stack img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
